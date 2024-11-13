@@ -1,0 +1,57 @@
+{
+ "app": "frappe",
+ "charts": [],
+ "content": "[{\"id\":\"HJunJfo8N0\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Airplane Mode</span>\",\"col\":12}},{\"id\":\"6uEVt-rvcS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airlines\",\"col\":4}},{\"id\":\"GSzC0G5pfm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Passengers\",\"col\":4}},{\"id\":\"T3rwMZvjel\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airplanes\",\"col\":4}}]",
+ "creation": "2024-11-13 18:08:30.129993",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "map",
+ "idx": 0,
+ "indicator_color": "blue",
+ "is_hidden": 0,
+ "label": "Airplane Mode",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2024-11-13 18:19:41.475525",
+ "modified_by": "Administrator",
+ "module": "Airplane",
+ "name": "Airplane Mode",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Airlines",
+   "link_to": "Airline",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "All Airplanes",
+   "link_to": "Airplane",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "All Passengers",
+   "link_to": "Flight Passenger",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Airplane Mode",
+ "type": "Workspace"
+}
