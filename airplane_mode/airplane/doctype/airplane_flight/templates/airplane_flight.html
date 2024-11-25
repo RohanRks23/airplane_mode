@@ -1,0 +1,24 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{name}}</h1> <br>
+<h2>Flight Details</h2>
+<div style="margin-left: 25px;">
+    <t2>• Airline: {{airplane}}</t2><br>
+    <t2>• {{source_airport_code}} → {{destination_airport_code}}</t2><br>
+    <t2>• {{date_of_departure}}</t2> | <t2>{{time_of_departure}}</t2><br>
+    <t2>• Duration: {{flight_duration}}</t2><br>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <a class="btn btn-info" href="/ticket-booking-web-form/new?flight={{name}}&flight_price={{amount}}" style="margin-top: 20px; margin-left: 5px; padding: 10px 25px; font-size: 1rem; color: #fff; background-color: #007bff; border: none; border-radius: 5px; cursor: pointer;">
+        Book Flight
+    </a>
+    <div style="text-align: right; font-size: 2rem; font-weight: bold;">
+        {{ flight_price }}
+    </div>
+</div>
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->

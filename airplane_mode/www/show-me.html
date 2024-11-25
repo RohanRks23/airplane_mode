@@ -1,0 +1,11 @@
+{% set color = frappe.form_dict.get("color", "Black") %}
+    
+    <!-- Full-Screen Rectangle with Dynamic Background Color -->
+    <div 
+        style= "
+            width: 1000px;
+            height: 500px;
+            background-color: {{ color }};
+        "
+    >
+    </div>

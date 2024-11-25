@@ -7,13 +7,15 @@
  "engine": "InnoDB",
  "field_order": [
   "passenger",
+  "seat",
+  "amended_from",
   "column_break_igbo",
   "flight",
   "status",
-  "section_break_mjwo",
+  "section_break_cejo",
   "source_airport",
   "source_airport_code",
-  "column_break_hpyl",
+  "column_break_beue",
   "destination_airport",
   "destination_airport_code",
   "departure_details_section",
@@ -21,7 +23,12 @@
   "departure_time",
   "column_break_tccw",
   "duration_of_flight",
-  "amended_from"
+  "add_ons_section",
+  "add_ons",
+  "billing_detail_section",
+  "flight_price",
+  "column_break_nasv",
+  "total_amount"
  ],
  "fields": [
   {
@@ -33,76 +40,39 @@
    "reqd": 1
   },
   {
-   "fieldname": "source_airport",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Source Airport",
-   "options": "Airport",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "source_airport.code",
-   "fieldname": "source_airport_code",
-   "fieldtype": "Read Only",
-   "in_list_view": 1,
-   "label": "Source Airport Code",
-   "options": "Airport",
-   "read_only": 1,
-   "reqd": 1
-  },
-  {
-   "fieldname": "destination_airport",
-   "fieldtype": "Link",
-   "label": "Destination Airport",
-   "options": "Airport",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "destination_airport.code",
-   "fieldname": "destination_airport_code",
-   "fieldtype": "Read Only",
-   "in_list_view": 1,
-   "label": "Destination Airport Code",
-   "options": "Airport",
-   "read_only": 1,
-   "reqd": 1
-  },
-  {
    "fieldname": "flight",
    "fieldtype": "Link",
    "label": "Flight",
-   "options": "Airplane",
+   "options": "Airplane Flight",
    "reqd": 1
   },
   {
+   "fetch_from": "flight.date_of_departure",
    "fieldname": "departure_date",
    "fieldtype": "Date",
    "in_standard_filter": 1,
    "label": "Departure Date",
+   "read_only": 1,
    "reqd": 1
   },
   {
+   "fetch_from": "flight.time_of_departure",
    "fieldname": "departure_time",
    "fieldtype": "Time",
    "label": "Departure Time",
+   "read_only": 1,
    "reqd": 1
   },
   {
+   "fetch_from": "flight.duration",
    "fieldname": "duration_of_flight",
    "fieldtype": "Duration",
    "label": "Duration of Flight",
+   "read_only": 1,
    "reqd": 1
   },
   {
    "fieldname": "column_break_igbo",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_mjwo",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_hpyl",
    "fieldtype": "Column Break"
   },
   {
@@ -131,12 +101,86 @@
    "label": "Status",
    "options": "Booked\nChecked-In\nBoarded",
    "reqd": 1
+  },
+  {
+   "fieldname": "add_ons_section",
+   "fieldtype": "Section Break",
+   "label": "Add on's"
+  },
+  {
+   "fieldname": "billing_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Detail"
+  },
+  {
+   "fetch_from": "flight.flight_price",
+   "fieldname": "flight_price",
+   "fieldtype": "Currency",
+   "label": "Flight Price",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nasv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "seat",
+   "fieldtype": "Data",
+   "label": "Seat"
+  },
+  {
+   "fieldname": "section_break_cejo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "flight.source_airport",
+   "fieldname": "source_airport",
+   "fieldtype": "Link",
+   "label": "Source Airport",
+   "options": "Airport",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "flight.source_airport_code",
+   "fieldname": "source_airport_code",
+   "fieldtype": "Read Only",
+   "label": "Source Airport Code"
+  },
+  {
+   "fieldname": "column_break_beue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "flight.destination_airport",
+   "fieldname": "destination_airport",
+   "fieldtype": "Link",
+   "label": "Destination Airport ",
+   "options": "Airport",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "flight.destination_airport_code",
+   "fieldname": "destination_airport_code",
+   "fieldtype": "Read Only",
+   "label": "Destination Airport Code"
+  },
+  {
+   "fieldname": "add_ons",
+   "fieldtype": "Table",
+   "options": "Airplane Ticket Add-on Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-13 18:54:38.238052",
+ "modified": "2024-11-14 02:34:50.248491",
  "modified_by": "Administrator",
  "module": "Airplane",
  "name": "Airplane Ticket",

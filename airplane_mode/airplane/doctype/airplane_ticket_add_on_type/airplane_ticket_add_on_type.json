@@ -3,48 +3,26 @@
  "allow_import": 1,
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2024-11-13 16:30:27.979463",
+ "creation": "2024-11-14 00:52:51.987224",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "code",
-  "city",
-  "column_break_xlvx",
-  "country"
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "code",
+   "fieldname": "description",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Code",
-   "reqd": 1
-  },
-  {
-   "fieldname": "city",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "City",
-   "reqd": 1
-  },
-  {
-   "fieldname": "column_break_xlvx",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "country",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Country",
-   "reqd": 1
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-14 16:51:48.512582",
+ "modified": "2024-11-14 00:56:03.106756",
  "modified_by": "Administrator",
  "module": "Airplane",
- "name": "Airport",
+ "name": "Airplane Ticket Add-on Type",
  "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
@@ -61,7 +39,6 @@
    "write": 1
   }
  ],
- "search_fields": "city, code",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []

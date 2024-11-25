@@ -38,7 +38,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-13 15:39:28.501433",
+ "modified": "2024-11-14 16:52:55.251585",
  "modified_by": "Administrator",
  "module": "Airplane",
  "name": "Airplane",
@@ -58,6 +58,7 @@
    "write": 1
   }
  ],
+ "search_fields": "airline",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []
