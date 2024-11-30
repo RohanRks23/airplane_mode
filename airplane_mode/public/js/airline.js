@@ -1,12 +1,3 @@
-// Copyright (c) 2024, Mr.Rohan and contributors
-// For license information, please see license.txt
-
-// frappe.ui.form.on("Airline", {
-// 	refresh(frm) {
-
-// 	},
-// });
-
 frappe.ui.form.on('Airline', {
     refresh(frm) {
         // Find the container with the specific class
@@ -43,4 +34,20 @@ frappe.ui.form.on('Airline', {
     }
 });
 
+// // Function to call the Python function to trigger the JavaScript refresh
+// function triggerPythonAndRefresh() {
+//     frappe.call({
+//         method: 'your_module.airline.call_js_refresh',  // Path to the Python function
+//         args: {},
+//         callback: function(response) {
+//             console.log(response.message);  // Message from the Python function
+//             // Now call the JavaScript refresh function directly
+//             refresh(frappe.ui.form);
+//         }
+//     });
+// }
 
+// // For example, call the trigger function when a button is clicked
+// $('#your_button_id').on('click', function() {
+//     triggerPythonAndRefresh();
+// });

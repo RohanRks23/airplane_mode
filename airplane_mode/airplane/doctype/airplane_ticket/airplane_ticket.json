@@ -131,8 +131,10 @@
    "read_only": 1
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "seat",
    "fieldtype": "Data",
+   "in_preview": 1,
    "label": "Seat"
   },
   {
@@ -180,7 +182,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-14 02:34:50.248491",
+ "modified": "2024-11-30 22:50:54.271270",
  "modified_by": "Administrator",
  "module": "Airplane",
  "name": "Airplane Ticket",

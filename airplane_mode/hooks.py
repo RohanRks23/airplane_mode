@@ -5,6 +5,20 @@ app_description = "Quick an affordable flights for all."
 app_email = "rohan@frappe.io"
 app_license = "mit"
 
+
+# Hook to include JS file before the form loads
+# app_include_js = "/assets/airplane_mode/js/airline_web.js"
+
+# include js in doctype views
+# doctype_js = {"Airline" : "public/js/airline.js"}
+
+# doc_events = {
+# 	"Airline": {
+# 		"on_change": "airplane_mode.airplane.doctype.airline.airline.call_js_refresh"
+# 	}
+# }
+
+
 # Apps
 # ------------------
 
