@@ -12,6 +12,7 @@
   "amended_from",
   "column_break_jszl",
   "status",
+  "airline",
   "section_break_lqqd",
   "source_airport",
   "source_airport_code",
@@ -150,6 +151,12 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "fetch_from": "airplane.airline",
+   "fieldname": "airline",
+   "fieldtype": "Data",
+   "label": "Airline"
   }
  ],
  "has_web_view": 1,
@@ -157,7 +164,7 @@
  "is_published_field": "is_published",
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-14 16:49:16.429728",
+ "modified": "2024-12-02 18:14:09.683273",
  "modified_by": "Administrator",
  "module": "Airplane",
  "name": "Airplane Flight",
