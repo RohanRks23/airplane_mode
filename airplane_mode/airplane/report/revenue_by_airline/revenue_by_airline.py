@@ -5,7 +5,7 @@ import frappe
 from frappe import _
 
 
-def execute(filters: dict | None = None):
+def execute(filters=None):
 	columns = get_columns()
 	data = get_data()
 	chart = get_chart()
@@ -24,7 +24,7 @@ def get_columns():
 		},
 		{
 			"label": _("Revenue"),
-			"fieldname": "total_revenue",
+			"fieldname": "revenue",
 			"fieldtype": "Currency",
 			"width": "150"
 		},
@@ -36,7 +36,7 @@ def get_data():
 	data = frappe.get_all(
 		doctype="Airplane Ticket", 
 		fields=[
-			"SUM(total_amount) AS total_revenue", 
+			"SUM(total_amount) AS revenue", 
 			"flight.airline"
 		],
 		filters={"docstatus": 1}, 
@@ -55,7 +55,7 @@ def get_chart():
 			'datasets': 
 			[
 				{
-					'values': [entry['total_revenue'] for entry in data]
+					'values': [entry['revenue'] for entry in data]
 				}
 			]
 		},
@@ -64,14 +64,14 @@ def get_chart():
 	return chart
 
 def get_report_summary():
-    data = get_data()
-    overall_revenue = sum(entry['total_revenue'] for entry in data)
-    formatted_revenue = frappe.format_value(overall_revenue, {"fieldtype": "Currency"})
-    report_summary = [
-        {"label": "Total Revenue", "value": formatted_revenue, "indicator": "Green"},
-    ]
-    
-    return report_summary
+	data = frappe.get_all(doctype="Airplane Ticket", fields=["SUM(total_amount) AS total_revenue"], filters={"docstatus": 1})
+	# Extract the total_revenue from the list of dictionaries
+	total_revenue = data[0]['total_revenue'] if data else 0
+	# Format the summary
+	summary = [{"label": "Total Revenue", "value": total_revenue, "indicator": "Green"}]
+	# print(summary)
+	return summary
+
 
 
 
