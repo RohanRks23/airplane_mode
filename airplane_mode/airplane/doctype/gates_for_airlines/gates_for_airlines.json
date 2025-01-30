@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-11 14:29:14.247720",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "grates",
+  "column_break_ybfh",
+  "airline"
+ ],
+ "fields": [
+  {
+   "fieldname": "grates",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Grates",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ybfh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "airline",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Airline",
+   "options": "Airline",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-11 14:31:55.915944",
+ "modified_by": "Administrator",
+ "module": "Airplane",
+ "name": "Gates for Airlines",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

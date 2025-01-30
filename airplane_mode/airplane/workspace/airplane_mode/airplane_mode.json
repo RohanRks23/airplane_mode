@@ -1,7 +1,7 @@
 {
  "app": "frappe",
  "charts": [],
- "content": "[{\"id\":\"HJunJfo8N0\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Airplane Mode</span>\",\"col\":12}},{\"id\":\"6uEVt-rvcS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airlines\",\"col\":4}},{\"id\":\"GSzC0G5pfm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Passengers\",\"col\":4}},{\"id\":\"T3rwMZvjel\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airplanes\",\"col\":4}}]",
+ "content": "[{\"id\":\"7XiyOD1Cst\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Doctypes</b></span>\",\"col\":12}},{\"id\":\"6uEVt-rvcS\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Airlines\",\"col\":4}},{\"id\":\"GSzC0G5pfm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Passengers\",\"col\":4}},{\"id\":\"T3rwMZvjel\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"All Airplanes\",\"col\":4}},{\"id\":\"1kKXs3lSMV\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"MNCUqgl-t3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports</b></span>\",\"col\":12}},{\"id\":\"9vmkJ1qDhM\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Flights by Airline\",\"col\":4}},{\"id\":\"nRyuRlFrns\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Add-on Popularity\",\"col\":4}},{\"id\":\"6mcZWwzi30\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Revenue By Airline\",\"col\":4}}]",
  "creation": "2024-11-13 18:08:30.129993",
  "custom_blocks": [],
  "docstatus": 0,
@@ -15,7 +15,7 @@
  "label": "Airplane Mode",
  "link_type": "DocType",
  "links": [],
- "modified": "2024-11-13 18:19:41.475525",
+ "modified": "2024-12-10 15:51:27.043948",
  "modified_by": "Administrator",
  "module": "Airplane",
  "name": "Airplane Mode",
@@ -28,6 +28,13 @@
  "sequence_id": 23.0,
  "shortcuts": [
   {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Flights by Airline",
+   "link_to": "Flights by Airline",
+   "type": "Report"
+  },
+  {
    "color": "Orange",
    "doc_view": "List",
    "label": "Airlines",
@@ -36,12 +43,26 @@
    "type": "DocType"
   },
   {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Add-on Popularity",
+   "link_to": "Add-on Popularity",
+   "type": "Report"
+  },
+  {
    "color": "Yellow",
    "doc_view": "List",
    "label": "All Airplanes",
    "link_to": "Airplane",
    "stats_filter": "[]",
    "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Revenue By Airline",
+   "link_to": "Revenue By Airline",
+   "type": "Report"
   },
   {
    "color": "Green",

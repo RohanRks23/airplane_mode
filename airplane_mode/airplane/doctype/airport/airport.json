@@ -10,7 +10,9 @@
   "code",
   "city",
   "column_break_xlvx",
-  "country"
+  "country",
+  "section_break_stgy",
+  "gates_for_airlines"
  ],
  "fields": [
   {
@@ -37,11 +39,22 @@
    "in_list_view": 1,
    "label": "Country",
    "reqd": 1
+  },
+  {
+   "fieldname": "section_break_stgy",
+   "fieldtype": "Section Break",
+   "label": "Gates Allocation"
+  },
+  {
+   "fieldname": "gates_for_airlines",
+   "fieldtype": "Table",
+   "label": "Gates for Airlines",
+   "options": "Gates for Airlines"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-03 09:52:49.467534",
+ "modified": "2024-12-11 14:33:39.247569",
  "modified_by": "Administrator",
  "module": "Airplane",
  "name": "Airport",

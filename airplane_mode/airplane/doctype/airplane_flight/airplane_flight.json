@@ -23,8 +23,22 @@
   "duration",
   "column_break_rfgx",
   "time_of_departure",
+  "gate_number",
   "pricing_details_section",
   "flight_price",
+  "crew_members_section",
+  "captain",
+  "first_officer",
+  "purser",
+  "flight_attendant",
+  "column_break_qbkl",
+  "medical_personnel",
+  "maintenance_engineer",
+  "dispatcher",
+  "column_break_cbtu",
+  "air_marshal",
+  "ground_handling_staff_source",
+  "ground_handling_staff_destination",
   "section_break_boka",
   "is_published",
   "route"
@@ -150,6 +164,94 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "fieldname": "crew_members_section",
+   "fieldtype": "Section Break",
+   "label": "Crew Members Assigned"
+  },
+  {
+   "fieldname": "captain",
+   "fieldtype": "Link",
+   "label": "Captain",
+   "options": "Crew Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "first_officer",
+   "fieldtype": "Link",
+   "label": "First Officer",
+   "options": "Crew Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purser",
+   "fieldtype": "Link",
+   "label": "Purser",
+   "options": "Crew Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "flight_attendant",
+   "fieldtype": "Link",
+   "label": "Flight Attendant",
+   "options": "Crew Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "medical_personnel",
+   "fieldtype": "Link",
+   "label": "Medical Personnel",
+   "options": "Crew Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "air_marshal",
+   "fieldtype": "Link",
+   "label": "Air Marshal",
+   "options": "Crew Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dispatcher",
+   "fieldtype": "Link",
+   "label": "Dispatcher",
+   "options": "Crew Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "maintenance_engineer",
+   "fieldtype": "Link",
+   "label": "Maintenance Engineer",
+   "options": "Crew Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qbkl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cbtu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ground_handling_staff_source",
+   "fieldtype": "Link",
+   "label": "Ground Handling Staff (Source)",
+   "options": "Crew Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ground_handling_staff_destination",
+   "fieldtype": "Link",
+   "label": "Ground Handling Staff (Destination)",
+   "options": "Crew Members",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gate_number",
+   "fieldtype": "Data",
+   "label": "Gate Number"
   }
  ],
  "has_web_view": 1,
@@ -157,7 +259,7 @@
  "is_published_field": "is_published",
  "is_submittable": 1,
  "links": [],
- "modified": "2024-12-03 18:25:00.954430",
+ "modified": "2024-12-11 15:13:13.262426",
  "modified_by": "Administrator",
  "module": "Airplane",
  "name": "Airplane Flight",

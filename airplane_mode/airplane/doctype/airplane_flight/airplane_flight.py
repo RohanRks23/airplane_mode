@@ -6,7 +6,7 @@ from frappe.website.website_generator import WebsiteGenerator
 from babel.numbers import format_currency
 
 class AirplaneFlight(WebsiteGenerator):
-	def on_submit(self):
+	def before_submit(self):
 		#To change status to Completed after submitting
 		self.status = f"Completed"
 

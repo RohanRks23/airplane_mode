@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{first_name} {last_name} - {role}",
+ "creation": "2024-12-06 12:56:22.916508",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "full_name",
+  "column_break_zjmz",
+  "role",
+  "associated_with",
+  "airline_name",
+  "airport_name",
+  "section_break_tmaq",
+  "air_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "\nCaptain\nFirst Officer\nPurser\nFlight Attendant\nGround Handling Staff\nDispatcher\nMaintenance Engineer\nAir Marshal\nMedical Personnel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "associated_with",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Associated With",
+   "options": "\nAirline\nAirport\nGovernment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "airline_name",
+   "fieldtype": "Link",
+   "label": "Airline Name",
+   "options": "Airline"
+  },
+  {
+   "fieldname": "airport_name",
+   "fieldtype": "Link",
+   "label": "Airport Name",
+   "options": "Airport"
+  },
+  {
+   "fieldname": "column_break_zjmz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_tmaq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "air_time",
+   "fieldtype": "Data",
+   "label": "Air Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-11 15:33:17.371449",
+ "modified_by": "Administrator",
+ "module": "Airplane",
+ "name": "Crew Members",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "role",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

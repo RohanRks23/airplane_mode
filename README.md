@@ -1,12 +1,57 @@
-<<<<<<< HEAD
-# frappe-bench
-My custom apps created in frappe-bench using the Frappe Framework.
-=======
 ### Airplane
 
 Quick an affordable flights for all.
 
-### Installation
+
+## Installation and setup
+
+**1. Set up your Frappe Bench:**
+If you prefer to test the application by setting up a local frappe bench environment (Follow the link provided below).
+
+   - Follow the official Frappe Framework Installation guide: https://docs.frappe.io/framework/user/en/installation
+   - Create a site in the frappe bench enviornment using the `bench` command:
+   ```
+   bench new-site <site-name>
+   ```
+
+**Testing the Application:**
+
+If you prefer to test the application without setting up a local environment, you can use a codespace repository (Follow the link provided below).
+
+   **[Codespace Repository](https://github.com/ankush/frappe_codespace.git)**
+   - This will open your bench environment in VSCode (Browser) where you can follow the below process.
+   
+   - Create a site in the frappe bench enviornment using the `bench` command:
+      ```
+      bench new-site <site-name>
+      ```
+
+**2. Install the App:**
+
+   - Clone this repository: 
+   - Using git command: `git clone <URL_OF_THIS_REPO>`
+   - OR
+   - Navigate to your Frappe bench directory.
+   - Install the app using the `bench` command:
+     ```bash
+     bench get-app airplane_mode
+     ```
+
+**3. Install the app in your site:**
+
+   - Create a new Frappe site (if you havent already). Skip if you already have a site in your bench environment.
+```
+bench new-site <site-name>
+```
+   - Install the app on your site:
+```
+bench --site <site-name> install-app airplane_mode
+```
+
+**4. Start your Frappe bench:**
+
+   - Start the Frappe bench: `bench start`
+   - Access your application: http://localhost:8000
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
@@ -42,4 +87,3 @@ This app can use GitHub Actions for CI. The following workflows are configured:
 ### License
 
 mit
->>>>>>> 8ac1f84 (feat: Initialize App)
