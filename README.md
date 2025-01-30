@@ -53,13 +53,6 @@ bench --site <site-name> install-app airplane_mode
    - Start the Frappe bench: `bench start`
    - Access your application: http://localhost:8000
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
-
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch rks
-bench install-app airplane_mode
-```
 
 ### Contributing
 
