@@ -1,6 +1,35 @@
-### Airplane
+### Airplane ✈️
 
-Quick an affordable flights for all.
+**Quick and affordable flights for all.**
+
+Built an airline operations application using the Frappe Framework, enabling structured management of key aviation entities, including:
+
+Airlines
+Airports
+Aircraft
+Flights
+Crew
+Passengers
+
+**Key Features:**
+* 🔧 Modular architecture for easy customisation and scalability
+* 🌐 Seamless integration of server-side logic with responsive client-side interfaces
+* ✅ Environment setup via conda for reproducible development
+* 🧪 Test-ready with clear configuration and automated workflows
+* 📊 Includes dashboards and reports for operational insights
+
+Technology Stack:
+Python · Frappe · JSON · GitHub Actions · Markdown · Conda
+
+This Frappe application empowers gym owners to manage their business efficiently, helping them focus on what matters most: motivating their members to achieve their fitness goals.
+
+## Key Features
+
+* **Flexible Membership Plan Management:** Create and customise membership plans to cater to diverse needs and preferences.
+* **Seamless Member Management:** Effortlessly manage member enrollments, memberships, and contact information.
+* **Attendance Tracking:** Track member attendance with ease, gaining valuable insights into gym usage patterns.
+* **Simplified Dashboards:** Intuitive and easy-to-use dashboards that provide a clear, real-time overview of key business metrics, enabling quick decision-making and performance tracking.
+* **Streamlined Operations:** Automate workflows to save time and reduce administrative overhead.
 
 
 ## Installation and setup
@@ -9,7 +38,7 @@ Quick an affordable flights for all.
 If you prefer to test the application by setting up a local frappe bench environment (Follow the link provided below).
 
    - Follow the official Frappe Framework Installation guide: https://docs.frappe.io/framework/user/en/installation
-   - Create a site in the frappe bench enviornment using the `bench` command:
+   - Create a site in the frappe bench environment using the `bench` command:
    ```
    bench new-site <site-name>
    ```
@@ -19,9 +48,9 @@ If you prefer to test the application by setting up a local frappe bench environ
 If you prefer to test the application without setting up a local environment, you can use a codespace repository (Follow the link provided below).
 
    **[Codespace Repository](https://github.com/ankush/frappe_codespace.git)**
-   - This will open your bench environment in VSCode (Browser) where you can follow the below process.
+   - This will open your bench environment in VSCode (Browser) where you can follow the process below.
    
-   - Create a site in the frappe bench enviornment using the `bench` command:
+   - Create a site in the frappe bench environment using the `bench` command:
       ```
       bench new-site <site-name>
       ```
@@ -37,9 +66,9 @@ If you prefer to test the application without setting up a local environment, yo
      bench get-app airplane_mode
      ```
 
-**3. Install the app in your site:**
+**3. Install the app on your site:**
 
-   - Create a new Frappe site (if you havent already). Skip if you already have a site in your bench environment.
+   - Create a new Frappe site (if you haven't already). Skip if you already have a site in your bench environment.
 ```
 bench new-site <site-name>
 ```
@@ -53,30 +82,3 @@ bench --site <site-name> install-app airplane_mode
    - Start the Frappe bench: `bench start`
    - Access your application: http://localhost:8000
 
-
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/airplane_mode
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-### CI
-
-This app can use GitHub Actions for CI. The following workflows are configured:
-
-- CI: Installs this app and runs unit tests on every push to `develop` branch.
-- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
-
-
-### License
-
-mit
