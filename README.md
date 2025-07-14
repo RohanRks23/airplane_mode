@@ -1,17 +1,10 @@
 ### Airplane ✈️
 
 **Quick and affordable flights for all.**
-
 Built an airline operations application using the Frappe Framework, enabling structured management of key aviation entities, including:
+Airlines, Airports, Aircraft, Flights, Crew, Passengers
 
-Airlines
-Airports
-Aircraft
-Flights
-Crew
-Passengers
-
-**Key Features:**
+## Key Features:
 * 🔧 Modular architecture for easy customisation and scalability
 * 🌐 Seamless integration of server-side logic with responsive client-side interfaces
 * ✅ Environment setup via conda for reproducible development
@@ -20,17 +13,6 @@ Passengers
 
 Technology Stack:
 Python · Frappe · JSON · GitHub Actions · Markdown · Conda
-
-This Frappe application empowers gym owners to manage their business efficiently, helping them focus on what matters most: motivating their members to achieve their fitness goals.
-
-## Key Features
-
-* **Flexible Membership Plan Management:** Create and customise membership plans to cater to diverse needs and preferences.
-* **Seamless Member Management:** Effortlessly manage member enrollments, memberships, and contact information.
-* **Attendance Tracking:** Track member attendance with ease, gaining valuable insights into gym usage patterns.
-* **Simplified Dashboards:** Intuitive and easy-to-use dashboards that provide a clear, real-time overview of key business metrics, enabling quick decision-making and performance tracking.
-* **Streamlined Operations:** Automate workflows to save time and reduce administrative overhead.
-
 
 ## Installation and setup
 
