@@ -1,4 +1,4 @@
-# ✈️ airplane_mode
+# ✈ airplane_mode
 **airplane_mode** is a versatile airline management framework built on the [Frappe](https://frappeframework.com) platform, enabling developers to build scalable and maintainable air travel applications.
 It enables structured management of key aviation entities, including:
 - Airlines, Airports, Aircraft, Flights, Crew, Passenger
