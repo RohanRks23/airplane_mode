@@ -1,32 +1,27 @@
 # ✈️ airplane_mode
-
 **airplane_mode** is a versatile airline management framework built on the [Frappe](https://frappeframework.com) platform, enabling developers to build scalable and maintainable air travel applications.
+It enables structured management of key aviation entities, including:
+- Airlines, Airports, Aircraft, Flights, Crew, Passenger
 
 ---
 
 ## ✨ Why airplane_mode?
-
 This project simplifies the development of airline and travel systems by providing a structured, extensible architecture. It is designed to accelerate development while maintaining flexibility and clarity.
 
 ### 🚀 Core Features
-
 - 🛫 **Modular Data Models**  
-  Well-defined schemas for airplanes, airports, flights, and crew, supporting organized data management.
-
+  Well-defined schemas for airplanes, airports, flights, and crew, supporting organised data management.
 - 🌐 **Framework Integration**  
   Built-in hooks, notifications, and workflows to automate operations and enhance user engagement.
-
 - 🔧 **Developer-Friendly**  
   Supports testing, migrations, and deployment with clear configurations and scripts.
-
 - 🎯 **Dynamic User Interfaces**  
-  Responsive forms and intuitive interactions powered by client-side behaviors.
-
+  Responsive forms and intuitive interactions powered by client-side behaviours.
 - 📊 **Comprehensive Reports**  
   Dashboards and analytics for operational insights and better decision-making.
 
 - 🧩 **Extensibility**  
-  Easily extend or customize components to fit specific airline or travel business needs. Seamless integration of server-side logic with responsive client-side interfaces.
+  Easily extend or customise components to fit specific airline or travel business needs. Seamless integration of server-side logic with responsive client-side interfaces.
 
 ---
 
@@ -87,5 +82,5 @@ bench --site <site-name> install-app airplane_mode
 **4. Start your Frappe bench:**
 
    - Start the Frappe bench: `bench start`
-   - Access your application: http://localhost:8000
+   - Access your application at the link provided in the terminal. Usually it works in localhost:8000, if port 8000 is occupied, you might get some other port number.
 
